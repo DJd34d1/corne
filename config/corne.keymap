@@ -32,17 +32,65 @@
 / {
         combos {
            compatible = "zmk,combos";
+           combo_esc {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp ESC>;
+        };
+        
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp TAB>;
+        };
+        
+            combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp BSPC>;
+        };
+        
+            combo_lalt {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LALT>;
+        };
+        
+            combo_lgui {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp LGUI>;
+        };
+        
+        
+            combo_ret {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp RET>;
+        };
+        
+            combo_ralt {                                                                                                                          
+            timeout-ms = <50>;                                                                                                                    
+            key-positions = <21 22>;                                                                                                                
+            bindings = <&kp RALT>;                                                                                                                
+        };
+
+	    combo_rgui {
+	    timeout-ms = <50>;
+	    key-positions = <22 23>;
+	    bindings = <&kp RGUI>;
+	};
            combo_lpar {
               timeout-ms = <50>;
               key-positions = <25 26>;
               bindings = <&kp LPAR>;
-           };
+        };
 
            combo_rpar {
               timeout-ms = <50>;
               key-positions = <33 34>;
               bindings = <&kp RPAR>;
-           };
+          };
         };
 
         conditional_layers {
